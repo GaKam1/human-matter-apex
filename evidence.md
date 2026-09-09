@@ -25,7 +25,7 @@
 | Fact | Evidence level | Source |
 |---|---|---|
 | The present operating team consists of Kamil, Gabi and the custom AI system Jarvis. | Founder statement | Kamil follow-up answer, item 1. |
-| A **part-time** customer-service team member handles returns and customer support. | Founder statement | Kamil follow-up answer, item 1. |
+| A **full-time** customer-service team member handles returns and customer support. | Founder statement | Kamil follow-up answer, item 1 ("na pełen etat," with a spelling error in the original answer). |
 | A third-party Polish warehouse handles fulfilment and shipping. | Founder statement | Kamil follow-up answer, item 1. |
 | Kamil currently touches the business across advertising, accounting, conversion rate optimisation and store work. | Founder statement | Kamil follow-up answer, item 2. |
 | Gabi owns creative strategy, graphics and video ads. | Founder statement | Kamil follow-up answer, item 2. |
