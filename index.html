@@ -196,6 +196,18 @@ footer{padding:0 0 56px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.nav a,.button{transition:none}}
 @media(prefers-reduced-transparency:reduce){.nav{background:var(--white);backdrop-filter:none;-webkit-backdrop-filter:none}}
 @media print{.nav-shell,.skip{display:none}.section{padding:48px 0}.hero{padding-bottom:32px}.hero-grid{padding-top:40px}.journey-head{position:static}.person,.principle,.product,.help-group{break-inside:avoid}}
+
+/* Product identity: colour is paired with a written label. */
+.product-main,.product{--product-color:#213BDF;--product-tint:#EEF1FF;--product-ink:#213BDF;border-top:3px solid var(--product-color);background:var(--product-tint)}
+.product--light{--product-color:#E66768;--product-tint:#FFF0F0;--product-ink:#AD3038}
+.product--recover{--product-color:#9B78DD;--product-tint:#F4EFFF;--product-ink:#6943A5}
+.product--vital{--product-color:#71AF85;--product-tint:#EDF7EF;--product-ink:#386E49}
+.product--cool{--product-color:#59BCCC;--product-tint:#EAF8FA;--product-ink:#216A77}
+.product-name{display:flex;flex-wrap:wrap;align-items:center;gap:8px;letter-spacing:0;text-transform:none}
+.product-swatch{display:inline-flex;align-items:center;gap:8px;max-width:100%;padding:5px 12px;border:1px solid color-mix(in srgb,var(--product-color) 25%,transparent);border-radius:999px;background:#FFFFFF;color:var(--product-ink);font-size:12px;font-weight:500;line-height:1.5}
+.product-swatch::before{content:"";flex:0 0 8px;width:8px;height:8px;border-radius:50%;background:var(--product-color)}
+.product .line-name,.product-main .line-name{color:var(--product-ink)}
+.product-status{display:inline-flex;align-items:center;padding:5px 10px;border:1px dashed var(--product-color);border-radius:999px;color:var(--product-ink);font-size:11px;line-height:1.5}
 </style>
 </head>
 <body>
@@ -285,14 +297,14 @@ footer{padding:0 0 56px}
 <h2>One brand, five product lines.</h2>
 <p class="intro">This is the planned portfolio architecture. VITAL and COOL are future lines, not completed launches.</p>
 <div aria-label="Human Matter product architecture" class="product-grid">
-<article class="product-main"><div><p class="product-name">Blue</p><h3 class="line-name">MOVE</h3></div><p>Stabilisation and orthopaedic support.</p></article>
+<article class="product-main"><div><p class="product-name"><span class="product-swatch">Blue</span></p><h3 class="line-name">MOVE</h3></div><p>Stabilisation and orthopaedic support.</p></article>
 <div class="product-pair">
-<article class="product"><p class="product-name">Red</p><h3 class="line-name">LIGHT</h3><p>Red-light therapy.</p></article>
-<article class="product"><p class="product-name">Violet</p><h3 class="line-name">RECOVER</h3><p>Compression and recovery wearables.</p></article>
+<article class="product product--light"><p class="product-name"><span class="product-swatch">Red</span></p><h3 class="line-name">LIGHT</h3><p>Red-light therapy.</p></article>
+<article class="product product--recover"><p class="product-name"><span class="product-swatch">Violet</span></p><h3 class="line-name">RECOVER</h3><p>Compression and recovery wearables.</p></article>
 </div>
 <div class="product-pair">
-<article class="product"><p class="product-name">Green, future</p><h3 class="line-name">VITAL</h3><p>Supplements.</p></article>
-<article class="product"><p class="product-name">Cyan, future</p><h3 class="line-name">COOL</h3><p>Cold therapy.</p></article>
+<article class="product product--vital"><p class="product-name"><span class="product-swatch">Green</span><span class="product-status">Future line</span></p><h3 class="line-name">VITAL</h3><p>Supplements.</p></article>
+<article class="product product--cool"><p class="product-name"><span class="product-swatch">Cyan</span><span class="product-status">Future line</span></p><h3 class="line-name">COOL</h3><p>Cold therapy.</p></article>
 </div>
 </div>
 </div>
